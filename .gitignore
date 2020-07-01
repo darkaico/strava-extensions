@@ -60,3 +60,4 @@ venv
 .vscode/
 logs/
 *.code-workspace
+.env
