@@ -24,7 +24,4 @@ class SummaryActivitySchema(Schema):
 
     @post_load
     def make_model(self, data, **kwargs):
-        return from_dict(
-            data_class=SummaryActivity,
-            data=data,
-        )
+        return from_dict(data_class=SummaryActivity, data=data)
