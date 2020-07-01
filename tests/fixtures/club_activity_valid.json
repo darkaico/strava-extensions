@@ -1,0 +1,15 @@
+{
+  "resource_state": 2,
+  "athlete": {
+    "resource_state": 2,
+    "firstname": "Sebastian",
+    "lastname": "R."
+  },
+  "name": "Vuelta ciclística por la mañana",
+  "distance": 23794.9,
+  "moving_time": 5557,
+  "elapsed_time": 6764,
+  "total_elevation_gain": 275.4,
+  "type": "Ride",
+  "workout_type": 10
+}

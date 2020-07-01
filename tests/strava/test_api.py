@@ -60,7 +60,7 @@ def test_get_club_activities(strava_api_with_activities):
 
     activities = strava_api_with_activities.get_club_activities(4)
 
-    assert len(activities) == 2
+    assert len(activities) == 3
 
 
 def test_get_club_activities_http_error(strava_api_http_error):

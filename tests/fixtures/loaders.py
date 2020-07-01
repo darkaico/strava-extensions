@@ -18,3 +18,11 @@ def load_invalid_club_activities():
         result = json.load(f)
 
     return result
+
+
+def load_valid_club_activity():
+
+    with open(f'{CURRENT_DIR}/club_activity_valid.json') as f:
+        result = json.load(f)
+
+    return result

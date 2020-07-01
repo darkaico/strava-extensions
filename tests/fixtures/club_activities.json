@@ -26,7 +26,21 @@
     "moving_time": 2773,
     "elapsed_time": 2825,
     "total_elevation_gain": 91.2,
-    "type": "Run",
-    "workout_type": 0
+    "type": "Run"
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "resource_state": 2,
+      "firstname": "German",
+      "lastname": "V."
+    },
+    "name": "Afternoon Ride",
+    "distance": 6124.7,
+    "moving_time": 1570,
+    "elapsed_time": 1570,
+    "total_elevation_gain": 32.1,
+    "type": "Ride",
+    "workout_type": null
   }
 ]

@@ -1,3 +1,4 @@
+from dacite import from_dict
 from marshmallow import (
     Schema,
     fields,
@@ -19,8 +20,11 @@ class SummaryActivitySchema(Schema):
     elapsed_time = fields.Int(required=True)
     total_elevation_gain = fields.Float(required=True)
     activity_type = fields.Str(required=True, data_key='type')
-    workout_type = fields.Int(required=True)
+    workout_type = fields.Int(required=False, allow_none=True)
 
     @post_load
     def make_model(self, data, **kwargs):
-        return SummaryActivity(**data)
+        return from_dict(
+            data_class=SummaryActivity,
+            data=data,
+        )

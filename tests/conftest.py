@@ -33,3 +33,8 @@ def json_club_activities():
 @pytest.fixture
 def json_invalid_club_activities():
     return loaders.load_invalid_club_activities()
+
+
+@pytest.fixture
+def json_club_activity():
+    return loaders.load_valid_club_activity()
