@@ -4,7 +4,7 @@ from marshmallow import (
     post_load
 )
 
-from strava_viewer.strava.models import Athlete
+from strava_extensions.strava.models import Athlete
 
 
 class AthleteSchema(Schema):

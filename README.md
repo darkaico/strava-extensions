@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.org/darkaico/strava-viewer.svg?branch=master)](https://travis-ci.org/darkaico/strava-viewer)
 [![Coverage Status](https://coveralls.io/repos/github/darkaico/strava-viewer/badge.svg?branch=master)](https://coveralls.io/github/darkaico/strava-viewer?branch=master)
 
-# Strava Viewer
+# Strava Extensions
 
 App that fetchs information from strava and show in a simple flask application.
 
@@ -18,7 +18,7 @@ STRAVA_API_ACCESS_TOKEN=<Access Token>
 STRAVA_CLUB_ID=<Club Id>
 ```
 
-To make things easier to test in local env im using [python-dotenv](https://github.com/theskumar/python-dotenv) so you could create a new file called `.env` under `strava_viewer` folder (there is an `.env.example` you could us as example).
+To make things easier to test in local env im using [python-dotenv](https://github.com/theskumar/python-dotenv) so you could create a new file called `.env` under `strava_extensions` folder (there is an `.env.example` you could us as example).
 
 ### Poetry
 
@@ -33,7 +33,7 @@ poetry install
 - Run Flask Project
 
 ```shell
-poetry run python strava_viewer/flask-server/main.py
+poetry run python strava_extensions/flask-server/main.py
 ```
 
 - Run tests

@@ -5,7 +5,7 @@ from marshmallow import (
     post_load
 )
 
-from strava_viewer.strava.models import SummaryActivity
+from strava_extensions.strava.models import SummaryActivity
 
 from .athletes_schemas import AthleteSchema
 

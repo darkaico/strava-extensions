@@ -1,7 +1,7 @@
 import pytest
 import requests
 
-from strava_viewer.strava.api import StravaAPI
+from strava_extensions.strava.api import StravaAPI
 from tests.conftest import MockResponse
 
 

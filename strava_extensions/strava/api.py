@@ -1,7 +1,7 @@
 import requests
 
-from strava_viewer.strava.services import BuilderService
-from strava_viewer.utils.mixins import LoggerMixin
+from strava_extensions.strava.services import BuilderService
+from strava_extensions.utils.mixins import LoggerMixin
 
 
 class StravaAPI(LoggerMixin):
@@ -15,7 +15,8 @@ class StravaAPI(LoggerMixin):
     def get(self, resource_url: str):
         url = f'{self.API_URL}/{resource_url}'
 
-        response = requests.get(url, params={'access_token': self.access_token})
+        response = requests.get(
+            url, params={'access_token': self.access_token})
 
         if response.status_code != 200:
             self.logger.error(response)

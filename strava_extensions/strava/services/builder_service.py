@@ -6,8 +6,8 @@ from dacite import (
 )
 from marshmallow import ValidationError
 
-from strava_viewer.strava.schemas import SummaryActivitySchema
-from strava_viewer.utils import logger_utils
+from strava_extensions.strava.schemas import SummaryActivitySchema
+from strava_extensions.utils import logger_utils
 
 
 class BuilderService:

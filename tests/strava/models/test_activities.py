@@ -1,6 +1,6 @@
 import pytest
 
-from strava_viewer.strava.models import SummaryActivity
+from strava_extensions.strava.models import SummaryActivity
 
 
 @pytest.fixture

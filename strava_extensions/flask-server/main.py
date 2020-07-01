@@ -5,7 +5,7 @@ from flask import (
     render_template
 )
 
-from strava_viewer.strava.api import StravaAPI
+from strava_extensions.strava.api import StravaAPI
 
 app = Flask(__name__)
 
