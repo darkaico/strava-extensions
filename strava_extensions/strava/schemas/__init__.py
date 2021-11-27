@@ -1,1 +1,0 @@
-from .activities_schemas import SummaryActivitySchema

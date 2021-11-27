@@ -1,6 +1,6 @@
 from marshmallow import Schema, fields, post_load
 
-from strava_extensions.strava.models import Athlete
+from strava_extensions.strava.models.athletes import Athlete
 
 
 class AthleteSchema(Schema):

@@ -1,6 +1,6 @@
 import requests
 
-from strava_extensions.strava.services import BuilderService
+from strava_extensions.strava.services.builder_service import BuilderService
 from strava_extensions.utils.mixins import LoggerMixin
 
 

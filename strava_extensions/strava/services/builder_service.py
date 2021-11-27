@@ -1,9 +1,6 @@
-from datetime import datetime
-
-from dacite import Config, from_dict
 from marshmallow import ValidationError
 
-from strava_extensions.strava.schemas import SummaryActivitySchema
+from strava_extensions.strava.schemas.activities_schemas import SummaryActivitySchema
 from strava_extensions.utils import logger_utils
 
 
