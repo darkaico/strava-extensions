@@ -1,9 +1,6 @@
 from datetime import datetime
 
-from dacite import (
-    Config,
-    from_dict
-)
+from dacite import Config, from_dict
 from marshmallow import ValidationError
 
 from strava_extensions.strava.schemas import SummaryActivitySchema
@@ -12,7 +9,7 @@ from strava_extensions.utils import logger_utils
 
 class BuilderService:
 
-    logger = logger_utils.build_logger('builder_service')
+    logger = logger_utils.build_logger("builder_service")
 
     @classmethod
     def build_summary_activities(cls, json_summary_activities: dict):

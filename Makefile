@@ -10,6 +10,9 @@ flask_start:
 clean:
 	find . -iname '*.pyc' -delete
 	rm -rf .pytest_cache
-	
+
 update-packages:
 	poetry update
+
+lint:
+	pre-commit run --all-files

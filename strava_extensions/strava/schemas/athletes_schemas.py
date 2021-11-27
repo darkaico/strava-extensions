@@ -1,8 +1,4 @@
-from marshmallow import (
-    Schema,
-    fields,
-    post_load
-)
+from marshmallow import Schema, fields, post_load
 
 from strava_extensions.strava.models import Athlete
 

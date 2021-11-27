@@ -1,9 +1,5 @@
 from dacite import from_dict
-from marshmallow import (
-    Schema,
-    fields,
-    post_load
-)
+from marshmallow import Schema, fields, post_load
 
 from strava_extensions.strava.models import SummaryActivity
 
@@ -19,7 +15,7 @@ class SummaryActivitySchema(Schema):
     moving_time = fields.Int(required=True)
     elapsed_time = fields.Int(required=True)
     total_elevation_gain = fields.Float(required=True)
-    activity_type = fields.Str(required=True, data_key='type')
+    activity_type = fields.Str(required=True, data_key="type")
     workout_type = fields.Int(required=False, allow_none=True)
 
     @post_load
